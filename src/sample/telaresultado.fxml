@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.Telaresultado">
+   <children>
+      <TableView fx:id="txttableview" layoutY="7.0" prefHeight="326.0" prefWidth="524.0" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="7.0">
+        <columns>
+          <TableColumn fx:id="txttitulotabela" prefWidth="75.0" text="Titulo" />
+          <TableColumn fx:id="txtdesctabela" prefWidth="75.0" text="Descrição" />
+            <TableColumn fx:id="posetable1" prefWidth="75.0" text="1 Posição" />
+            <TableColumn fx:id="posetable2" prefWidth="75.0" text="2 Posição" />
+            <TableColumn fx:id="posetable3" prefWidth="75.0" text="3 Posição" />
+            <TableColumn fx:id="posetable4" prefWidth="75.0" text="4 posição" />
+            <TableColumn fx:id="posetable5" prefWidth="75.0" text="5 Posição" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,31 +1,36 @@
 package controler;
 
-import javafx.embed.swing.JFXPanel;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import sample.Main;
-import sample.user;
 
-import java.awt.*;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
-public class Telalogar {
+import javax.swing.*;
+
+public class Telalogar extends cadastroController {
     public Button txtchamacadastro;
     public TextField txtemaillogar;
-    public TextField txtsenhalogar;
+    public PasswordField pasword;
     public Button txtlogar;
-    //controler da tela de login
+    public TextField txtsenha;
 
+    public void entrarranking(ActionEvent actionEvent ) {
 
-
-    public void entrarranking(ActionEvent actionEvent) {
-
-     Main.trocaTelaPrincipal("telaprincipal");
+        if (txtemaillogar.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Entre com o login");
+            return;
+        }if (pasword.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Entre com a senha");
+            return;
+        }
+       if (!pasword.getText().equals(txtsenha.getText())){
+            JOptionPane.showMessageDialog(null,"senha  nao confere");
+            return;
+        }
     }
-
+//            Main.trocaTelaPrincipal("telaprincipal");
     public void chamartelacadastrar(ActionEvent actionEvent) {
 
         Main.trocatela("sample");
