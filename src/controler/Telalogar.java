@@ -29,6 +29,7 @@ public class Telalogar extends cadastroController {
             JOptionPane.showMessageDialog(null,"senha  nao confere");
             return;
         }
+
     }
 //            Main.trocaTelaPrincipal("telaprincipal");
     public void chamartelacadastrar(ActionEvent actionEvent) {

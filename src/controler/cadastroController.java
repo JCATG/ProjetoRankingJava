@@ -53,15 +53,14 @@ public class cadastroController{
             //adicionar o usuario "usuarios na lista"
             listaDeUsuarios.cadastracontato(usuarios);
             lbtotal.setText(listaDeUsuarios.numerocontatos());
-            System.out.println("user cadastrado");
+
+            JOptionPane.showMessageDialog(null,"user cadastrado");
+        System.out.println(usuarios);
             Main.trocatela("telalogar");
             txtnome.setText("");
             txtemail.setText("");
             txtsenha.setText("");
             txtsenhaconfirma.setText("");
-
-
-
     }
     public void LimparCadastro(ActionEvent actionEvent) {
 
@@ -81,32 +80,4 @@ public class cadastroController{
         txtsenhaconfirma.setText("");
     }
 }
-/*     user u = new user();
-        u.email=txtemail.toString();
-        u.senha=txtsenha.toString();
-        u.confirma=txtsenha1.toString();
 
-        if (txtemail.getText().equals("")){
-            JOptionPane.showMessageDialog(null,"Entre com o email");
-            return;
-        }
-         if (txtsenha.getText().equals("")){
-            JOptionPane.showMessageDialog(null,"Entre com a senha");
-            return;
-        }
-         if(txtsenha1.getText().equals("")){
-            JOptionPane.showMessageDialog(null,"Confirme sua senha");
-            return;
-        }
-        if (!txtsenha.getText().equals(txtsenha1.getText())){
-            JOptionPane.showMessageDialog(null,"senha  nao confere");
-            return;
-        }
-        if (txtsenha.getText().equals(txtsenha1.getText())){
-
-            JOptionPane.showMessageDialog(null,"usuario cadastrado");
-            Telalogar f = new Telalogar();
-            Main.trocatela("telalogar");
-            System.out.println(u);
-
-        }   */
